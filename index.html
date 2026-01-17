@@ -1,97 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Université des Mascareignes</title>
-  <meta name="description" content="Université des Mascareignes — Programs, Admissions, Events." />
-  <link rel="icon" href="assets/logo.svg" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Université des Mascareignes</title>
+    <meta
+      name="description"
+      content="Université des Mascareignes — Programs, Admissions, Events."
+    />
+    <link rel="icon" href="assets/logo.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <script defer src="script.js"></script>
-  <!-- Header -->
-  <header class="site" role="banner">
-    <div class="wrap">
-      <div class="brand">
-        <a href="#/"><img src="Logo_UDM.jpg" alt="UdM logo" /></a>
-        <h1 data-en="Université des Mascareignes" data-fr="Université des Mascareignes">Université des Mascareignes</h1>
+    <!-- Header -->
+    <header class="site" role="banner">
+      <div class="wrap">
+        <div class="brand">
+          <a href="#/"><img src="Logo_UDM.jpg" alt="UdM logo" /></a>
+          <h1
+            data-en="Université des Mascareignes"
+            data-fr="Université des Mascareignes"
+          >
+            Université des Mascareignes
+          </h1>
+        </div>
+        <nav class="primary" aria-label="Primary">
+          <a href="#/" data-en="Home" data-fr="Accueil">Home</a>
+          <a
+            href="programs.html#/programs"
+            data-en="Programs"
+            data-fr="Programmes"
+            >Programs</a
+          >
+          <a href="courses.html#/courses" data-en="Courses" data-fr="Cours"
+            >Courses</a
+          >
+          <a href="apply.html#/apply" data-en="Apply" data-fr="Candidature"
+            >Apply</a
+          >
+          <a href="events.html#/events" data-en="Events" data-fr="Événements"
+            >Events</a
+          >
+          <div class="lang" role="group" aria-label="Language">
+            <button type="button" data-lang-btn="en" aria-pressed="true">
+              EN
+            </button>
+            <button type="button" data-lang-btn="fr" aria-pressed="false">
+              FR
+            </button>
+          </div>
+        </nav>
       </div>
-      <nav class="primary" aria-label="Primary">
-        <a href="#/" data-en="Home" data-fr="Accueil">Home</a>
-        <a href="programs.html#/programs"  data-en="Programs" data-fr="Programmes">Programs</a>
-        <a href="courses.html#/courses"  data-en="Courses" data-fr="Cours">Courses</a>
-        <a href="apply.html#/apply" data-en="Apply" data-fr="Candidature">Apply</a>
-        <a href="events.html#/events"  data-en="Events" data-fr="Événements">Events</a>
-        <div class="lang" role="group" aria-label="Language">
-          <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
-          <button type="button" data-lang-btn="fr" aria-pressed="false">FR</button>
-        </div>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <!-- Main -->
-  <main class="wrap" id="app" tabindex="-1">
-    <!-- Home -->
-        <section id="page-home" class="page active">
+    <!-- Main -->
+    <main class="wrap" id="app" tabindex="-1">
+      <!-- Home -->
+      <section id="page-home" class="page active">
         <div class="hero">
-            <div>
-            <h2 data-en="Shaping tomorrow's leaders since 2012" data-fr="Former les leaders de demain depuis 2012">Shaping tomorrow's leaders since 2012</h2>
-            <p data-en="Public university in Mauritius with campuses in Rose Hill, Beau Plan and Bel Air." data-fr="Université publique à Maurice avec des campus à Rose Hill, Beau Plan et Bel Air.">Public university in Mauritius with campuses in Rose Hill, Beau Plan and Bel Air.</p>
-            <div style="display:flex; gap:10px;">
-                <a class="btn" href="#/apply" data-en="Apply now" data-fr="Postuler maintenant">Apply now</a>
-                <a class="btn secondary" href="#/programs" data-en="Explore programs" data-fr="Explorer les programmes">Explore programs</a>
+          <div>
+            <h2
+              data-en="Shaping tomorrow's leaders since 2012"
+              data-fr="Former les leaders de demain depuis 2012"
+            >
+              Shaping tomorrow's leaders since 2012
+            </h2>
+            <p
+              data-en="Public university in Mauritius with campuses in Rose Hill, Beau Plan and Bel Air."
+              data-fr="Université publique à Maurice avec des campus à Rose Hill, Beau Plan et Bel Air."
+            >
+              Public university in Mauritius with campuses in Rose Hill, Beau
+              Plan and Bel Air.
+            </p>
+            <div style="display: flex; gap: 10px">
+              <a
+                class="btn"
+                href="#/apply"
+                data-en="Apply now"
+                data-fr="Postuler maintenant"
+                >Apply now</a
+              >
+              <a
+                class="btn secondary"
+                href="programs.html#/programs"
+                data-en="Explore programs"
+                data-fr="Explorer les programmes"
+                >Explore programs</a
+              >
             </div>
-            </div>
-            <img src="udm_shooting1.jpg" alt="UdM campus view" />
+          </div>
+          <img src="udm_shooting1.jpg" alt="UdM campus view" />
         </div>
 
-        <h3 class="section-title" data-en="Faculties" data-fr="Facultés">Faculties</h3>
+        <h3 class="section-title" data-en="Faculties" data-fr="Facultés">
+          Faculties
+        </h3>
         <div class="grid cols-3">
-            <div class="card">
-            <h3 data-en="Sustainable Development & Engineering" data-fr="Développement durable & ingénierie">Sustainable Development & Engineering</h3>
-            <p class="muted" data-en="Engineering programs focused on sustainability and innovation." data-fr="Programmes d’ingénierie axés sur la durabilité et l’innovation.">Engineering programs focused on sustainability and innovation.</p>
-            <a href="#/programs?sde" class="badge" data-en="See programs" data-fr="Voir les programmes">See programs</a>
-            </div>
-            <div class="card">
-            <h3 data-en="Business & Management" data-fr="Gestion & commerce">Business & Management</h3>
-            <p class="muted" data-en="Undergraduate and postgraduate business pathways." data-fr="Parcours de commerce au premier et deuxième cycles.">Undergraduate and postgraduate business pathways.</p>
-            <a href="#/programs?bm" class="badge" data-en="See programs" data-fr="Voir les programmes">See programs</a>
-            </div>
-            <div class="card">
-            <h3 data-en="Information & Communication Technology" data-fr="Technologies de l’information & communication">Information & Communication Technology</h3>
-            <p class="muted" data-en="Modern computing degrees with industry exposure." data-fr="Diplômes en informatique avec exposition industrielle.">Modern computing degrees with industry exposure.</p>
-            <a href="#/programs?ict" class="badge" data-en="See programs" data-fr="Voir les programmes">See programs</a>
-            </div>
+          <div class="card">
+            <h3
+              data-en="Sustainable Development & Engineering"
+              data-fr="Développement durable & ingénierie"
+            >
+              Sustainable Development & Engineering
+            </h3>
+            <p
+              class="muted"
+              data-en="Engineering programs focused on sustainability and innovation."
+              data-fr="Programmes d’ingénierie axés sur la durabilité et l’innovation."
+            >
+              Engineering programs focused on sustainability and innovation.
+            </p>
+            <a
+              href="#/programs?sde"
+              class="badge"
+              data-en="See programs"
+              data-fr="Voir les programmes"
+              >See programs</a
+            >
+          </div>
+          <div class="card">
+            <h3 data-en="Business & Management" data-fr="Gestion & commerce">
+              Business & Management
+            </h3>
+            <p
+              class="muted"
+              data-en="Undergraduate and postgraduate business pathways."
+              data-fr="Parcours de commerce au premier et deuxième cycles."
+            >
+              Undergraduate and postgraduate business pathways.
+            </p>
+            <a
+              href="#/programs?bm"
+              class="badge"
+              data-en="See programs"
+              data-fr="Voir les programmes"
+              >See programs</a
+            >
+          </div>
+          <div class="card">
+            <h3
+              data-en="Information & Communication Technology"
+              data-fr="Technologies de l’information & communication"
+            >
+              Information & Communication Technology
+            </h3>
+            <p
+              class="muted"
+              data-en="Modern computing degrees with industry exposure."
+              data-fr="Diplômes en informatique avec exposition industrielle."
+            >
+              Modern computing degrees with industry exposure.
+            </p>
+            <a
+              href="#/programs?ict"
+              class="badge"
+              data-en="See programs"
+              data-fr="Voir les programmes"
+              >See programs</a
+            >
+          </div>
         </div>
 
-        <div class="notice" style="margin-top:16px;">
-            <p data-en="Contact us: admissions@udm.mu • +230 450 9500" data-fr="Contactez-nous : admissions@udm.mu • +230 450 9500">Contact us: admissions@udm.mu • +230 450 9500</p>
+        <div class="notice" style="margin-top: 16px">
+          <p
+            data-en="Contact us: admissions@udm.mu • +230 450 9500"
+            data-fr="Contactez-nous : admissions@udm.mu • +230 450 9500"
+          >
+            Contact us: admissions@udm.mu • +230 450 9500
+          </p>
         </div>
-        </section>
+      </section>
     </main>
 
-  <!-- Footer -->
-  <footer class="site">
-    <div class="wrap cols">
-      <div>
-        <h3 data-en="About UDM" data-fr="À propos de l’UDM">About UDM</h3>
-        <p class="muted" data-en="UDM is the youngest public university in Mauritius, founded in 2012." data-fr="L’UDM est la plus jeune université publique de Maurice, fondée en 2012.">UDM is the youngest public university in Mauritius, founded in 2012.</p>
+    <!-- Footer -->
+    <footer class="site">
+      <div class="wrap cols">
+        <div>
+          <h3 data-en="About UDM" data-fr="À propos de l’UDM">About UDM</h3>
+          <p
+            class="muted"
+            data-en="UDM is the youngest public university in Mauritius, founded in 2012."
+            data-fr="L’UDM est la plus jeune université publique de Maurice, fondée en 2012."
+          >
+            UDM is the youngest public university in Mauritius, founded in 2012.
+          </p>
+        </div>
+        <div>
+          <h3 data-en="Campuses" data-fr="Campus">Campuses</h3>
+          <ul class="list">
+            <li><span class="badge">Rose Hill</span></li>
+            <li><span class="badge">Beau Plan</span></li>
+            <li><span class="badge">Bel Air</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3 data-en="Contact" data-fr="Contact">Contact</h3>
+          <p class="muted">admissions@udm.mu<br />+230 450 9500</p>
+        </div>
       </div>
-      <div>
-        <h3 data-en="Campuses" data-fr="Campus">Campuses</h3>
-        <ul class="list">
-          <li><span class="badge">Rose Hill</span></li>
-          <li><span class="badge">Beau Plan</span></li>
-          <li><span class="badge">Bel Air</span></li>
-        </ul>
-      </div>
-      <div>
-        <h3 data-en="Contact" data-fr="Contact">Contact</h3>
-        <p class="muted">admissions@udm.mu<br/>+230 450 9500</p>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
