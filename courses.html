@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Université des Mascareignes</title>
+  <meta name="description" content="Université des Mascareignes — Programs, Admissions, Events." />
+  <link rel="icon" href="assets/logo.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+  <!-- Header -->
+  <header class="site" role="banner">
+    <div class="wrap">
+      <div class="brand">
+        <a href="home.html#/home"><img src="Logo_UDM.jpg" alt="UdM logo" /></a>
+        <h1 data-en="Université des Mascareignes" data-fr="Université des Mascareignes">Université des Mascareignes</h1>
+      </div>
+      <nav class="primary" aria-label="Primary">
+        <a href="home.html#/home" data-route="/" class="active" data-en="Home" data-fr="Accueil">Home</a>
+        <a href="programs.html#/programs" data-route="/programs" data-en="Programs" data-fr="Programmes">Programs</a>
+        <a href="courses.html#/courses" data-route="/courses" data-en="Courses" data-fr="Cours">Courses</a>
+        <a href="apply.html#/apply" data-route="/apply" data-en="Apply" data-fr="Candidature">Apply</a>
+        <a href="events.html#/events" data-route="/events" data-en="Events" data-fr="Événements">Events</a>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-btn="fr" aria-pressed="false">FR</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="wrap" id="app" tabindex="-1">
+    <!-- Courses -->
+    <section id="page-courses" class="page">
+      <h2 data-en="Course information" data-fr="Informations sur les cours">Course information</h2>
+      <div id="course-list" class="grid cols-2"></div>
+    </section>
+    </main>
+
+  <!-- Footer -->
+  <footer class="site">
+    <div class="wrap cols">
+      <div>
+        <h3 data-en="About UdM" data-fr="À propos de l’UdM">About UdM</h3>
+        <p class="muted" data-en="UdM is the youngest public university in Mauritius, founded in 2012." data-fr="L’UdM est la plus jeune université publique de Maurice, fondée en 2012.">UdM is the youngest public university in Mauritius, founded in 2012.</p>
+      </div>
+      <div>
+        <h3 data-en="Campuses" data-fr="Campus">Campuses</h3>
+        <ul class="list">
+          <li><span class="badge">Rose Hill</span></li>
+          <li><span class="badge">Beau Plan</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-en="Contact" data-fr="Contact">Contact</h3>
+        <p class="muted">admissions@udm.mu<br/>+230 450 9500</p>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Université des Mascareignes</title>
+  <meta name="description" content="Université des Mascareignes — Programs, Admissions, Events." />
+  <link rel="icon" href="assets/logo.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <script defer src="script.js"></script>
+  <!-- Header -->
+  <header class="site" role="banner">
+    <div class="wrap">
+      <div class="brand">
+        <a href="home.html#/home"><img src="Logo_UDM.jpg" alt="UdM logo" /></a>
+        <h1 data-en="Université des Mascareignes" data-fr="Université des Mascareignes">Université des Mascareignes</h1>
+      </div>
+      <nav class="primary" aria-label="Primary">
+        <a href="home.html#/home" data-route="/" class="active" data-en="Home" data-fr="Accueil">Home</a>
+        <a href="programs.html#/programs" data-route="/programs" data-en="Programs" data-fr="Programmes">Programs</a>
+        <a href="courses.html#/courses" data-route="/courses" data-en="Courses" data-fr="Cours">Courses</a>
+        <a href="apply.html#/apply" data-route="/apply" data-en="Apply" data-fr="Candidature">Apply</a>
+        <a href="events.html#/events" data-route="/events" data-en="Events" data-fr="Événements">Events</a>
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang-btn="fr" aria-pressed="false">FR</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="wrap" id="app" tabindex="-1">
+    <!-- Apply -->
+    <section id="page-apply" class="page">
+      <h2 data-en="Application" data-fr="Candidature">Application</h2>
+      <p class="muted" data-en="Fill out the form below to apply." data-fr="Remplissez le formulaire ci-dessous pour postuler.">Fill out the form below to apply.</p>
+
+      <form id="apply-form" novalidate>
+        <div class="row">
+          <div>
+            <label for="firstName" data-en="First name" data-fr="Prénom">First name</label>
+            <input id="firstName" name="firstName" required autocomplete="given-name" />
+          </div>
+          <div>
+            <label for="lastName" data-en="Last name" data-fr="Nom">Last name</label>
+            <input id="lastName" name="lastName" required autocomplete="family-name" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="email" data-en="Email" data-fr="Email">Email</label>
+            <input id="email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div>
+            <label for="phone" data-en="Phone" data-fr="Téléphone">Phone</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel-national" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="faculty" data-en="Faculty" data-fr="Faculté">Faculty</label>
+            <select id="faculty" name="faculty" required>
+              <option value="" data-en="Select faculty" data-fr="Sélectionner la faculté">Select faculty</option>
+              <option value="sde" data-en="Sustainable Development & Engineering" data-fr="Développement durable & ingénierie">Sustainable Development & Engineering</option>
+              <option value="bm" data-en="Business & Management" data-fr="Gestion & commerce">Business & Management</option>
+              <option value="ict" data-en="Information & Communication Technology" data-fr="Technologies de l’information & communication">Information & Communication Technology</option>
+            </select>
+          </div>
+          <div>
+            <label for="program" data-en="Program" data-fr="Programme">Program</label>
+            <select id="program" name="program" required>
+              <option value="" data-en="Select program" data-fr="Sélectionner le programme">Select program</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row-1 row">
+          <div>
+            <label for="statement" data-en="Personal statement" data-fr="Lettre de motivation">Personal statement</label>
+            <textarea id="statement" name="statement" rows="6" required></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div>
+            <label for="docs" data-en="Supporting documents (PDF)" data-fr="Documents justificatifs (PDF)">Supporting documents (PDF)</label>
+            <input id="docs" name="docs" type="file" accept="application/pdf" multiple />
+          </div>
+          <div>
+            <label for="intake" data-en="Preferred intake" data-fr="Session souhaitée">Preferred intake</label>
+            <select id="intake" name="intake" required>
+              <option value="" data-en="Select intake" data-fr="Sélectionner la session">Select intake</option>
+              <option value="2026-jan" data-en="January 2026" data-fr="Janvier 2026">January 2026</option>
+              <option value="2026-aug" data-en="August 2026" data-fr="Août 2026">August 2026</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="notice">
+          <p data-en="Entry requirement: Credits in English and advanced level passes (or equivalent)." data-fr="Condition d’admission : Crédits en anglais et passes au niveau avancé (ou équivalent).">Entry requirement: Credits in English and advanced level passes (or equivalent).</p>
+        </div>
+
+        <div style="margin-top:12px; display:flex; gap:10px;">
+          <button class="btn" type="submit" data-en="Submit application" data-fr="Soumettre la candidature">Submit application</button>
+          <button class="btn secondary" type="reset" data-en="Reset" data-fr="Réinitialiser">Reset</button>
+        </div>
+
+        <p id="apply-status" class="status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+    </main>
+
+  <!-- Footer -->
+  <footer class="site">
+    <div class="wrap cols">
+      <div>
+        <h3 data-en="About UdM" data-fr="À propos de l’UdM">About UdM</h3>
+        <p class="muted" data-en="UdM is the youngest public university in Mauritius, founded in 2012." data-fr="L’UdM est la plus jeune université publique de Maurice, fondée en 2012.">UdM is the youngest public university in Mauritius, founded in 2012.</p>
+      </div>
+      <div>
+        <h3 data-en="Campuses" data-fr="Campus">Campuses</h3>
+        <ul class="list">
+          <li><span class="badge">Rose Hill</span></li>
+          <li><span class="badge">Beau Plan</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3 data-en="Contact" data-fr="Contact">Contact</h3>
+        <p class="muted">admissions@udm.mu<br/>+230 450 9500</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
